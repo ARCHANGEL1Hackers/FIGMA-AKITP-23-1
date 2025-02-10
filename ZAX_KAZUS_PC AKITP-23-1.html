@@ -1,81 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Реєстрація</title>
 </head>
 <body>
-    <header>
-        <h2>KAZYS_PC </h2>
-    </header>
-    <main>
-     <center><p>СКЕЛЕТ СТОРІНКИ </p></center> 
-    </main>
-    <footer>
-        <p>&copy; 2025 БАЗА КОМП </p>
-    </footer>
-    <form align="left">
+    <div class="container">
+        <h2>КОМАНДА</h2>
+        <div class="team">
 
-        <h3 style="color:#F00">ПЕРСОНАЛЬІ ДАНІ</h3>
-        ІМ'Я:
-        <input type="text" name="ПАРОЛЬ" id="name"><br><br>
-        ПАРОЛЬ:
-        <input type="password" name="password" id="password"><br><br>
-        
-        ПОШТА: <input type="text" name="name" id="name"><br><br>
-        СТАТЬ: <input type="radio" name="radiogroup1" value="radio" id="radiogroup1"> ЖІНОЧКА
-        <input type="radio" name="radiogroup1" value="radio" id="radiogroup2">ЧОЛОВІЧА<br><br>
-        КОНТАКТИ: <input type="text" name="mobile" id="mobile">
-        
-        <h3 style="color:#F00">ВИБЕРІТЬ КВАЛІФІКАЦІЮ</h3>
-        
-        КАТЕГОРІЯ: <select name="degree" id="degree">
-                <option selected>ВИБЕРІТЬ ГРУПУ</option>
-                <option>ДІМ</option>
-                <option>ОФІС</option>
-                <option>ВИРОБНИЦТВО</option>
-              </select><br>
-              <br>
-        ПК: <select name="ua" id="ua">
-                <option selected>ВИБЕРІТЬ ЖЕЛІЗО</option>
-                <option>ПОТУЖНЕ</option>
-                <option>СЕРЕДНЄ</option>
-                <option>ЕНЕРГОЕФЕКТИВНЕ</option>
-                <option>Б/У</option>
-              </select><br><br>
-        ТИП: <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1">ВОДІЙ
-        <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup2">ЛЕТЧИК<br><br>
-        <h3 style="color:#F00">АДРЕСА</h3>
-        <textarea name="textarea" cols="35" rows="5" id="textarea"></textarea><br>
-        <br>
-        РЕЗЕРВНА: <input type="file" name="fileField" id="fileField"><br><br>
-        </form>
+            <div class="team">
+                <div class="team-member">
+                    <img src="image/image1.png.png" alt="Tom Ford" width="500" height="250">
+                    <p><strong>Tom Ford</strong></p>
+                </div>
+                <div class="team-member">
+                    <img src="image/image2.png.png" alt="Camila Garcia" width="500" height="250">
+                    <p><strong>Camila</strong></p>
+                </div>
+                <div class="team-member">
+                    <img src="image/image3.png.png" alt="Daniel Wilson" width="500" height="250">
+                    <p><strong>Daniel</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="form-container">
+
+            <form>
+                <div class="form-container">
+                    <h2>Реєстрація</h2>
+                    <form>
+                        <div>
+                            <input type="text" name="name" placeholder="Ім'я" required style="width: 500px; height: 100px; font-size: 20px;">
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Email" required style="width: 500px; height: 100px; font-size: 20px;">
+                        </div>
+                        <div>
+                            <input type="password" name="password" placeholder="Пароль" required style="width: 500px; height: 100px; font-size: 20px;">
+                        </div>
+                        <div>
+                            <button type="submit" style="width: 500px; height: 100px; font-size: 20px;">Зареєструватися</button>
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
+
