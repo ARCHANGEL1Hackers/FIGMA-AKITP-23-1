@@ -4,50 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Реєстрація</title>
+    <link rel="stylesheet" href="style_FIGMA.css">
 </head>
-<body>
-    <div class="container">
-        <h2>КОМАНДА</h2>
-        <div class="team">
-
-            <div class="team">
-                <div class="team-member">
-                    <img src="image/image1.png.png" alt="Tom Ford" width="500" height="250">
-                    <p><strong>Tom Ford</strong></p>
-                </div>
-                <div class="team-member">
-                    <img src="image/image2.png.png" alt="Camila Garcia" width="500" height="250">
-                    <p><strong>Camila</strong></p>
-                </div>
-                <div class="team-member">
-                    <img src="image/image3.png.png" alt="Daniel Wilson" width="500" height="250">
-                    <p><strong>Daniel</strong></p>
-                </div>
+<body> 
+<div class="main-container">
+    <div class="content-container">
+        <h2>ПЕРСОНАЛ</h2>
+        <div class="team" id="team">
+            <div class="team-member">
+                <img src="image/image1.png.png" alt="Tom Ford">
+                <p><strong>;DJ HOLA</strong></p>
+            </div>
+            <div class="team-member">
+                <img src="image/image2.png.png" alt="Camila Garcia">
+                <p><strong>COCA</strong></p>
+            </div>
+            <div class="team-member">
+                <img src="image/image3.png.png" alt="Daniel Wilson">
+                <p><strong>AMOGUS</strong></p>
             </div>
         </div>
-        <div class="form-container">
+    </div>
+    
+    <div class="navbar">
+        <a href="#">ГОЛОВНА</a>
+        <a href="#">ДОТАТКОВО</a>
+        <div class="menu">
+            <button class="menu-button">СЕРВІСИ</button>
+            <div class="dropdown-content">
+                <a href="#">SAMSUNG</a>
+                <a href="#">APPLE</a>
+                <a href="#">XIAOMI</a>
+            </div>
+        </div>
+    </div>
+    <title>Portfolio</title>
+</head>
+<body>
 
+    <div class="container">
+        <h1>ТЕХНОЛОГІЇ</h1>
+        <div class="portfolio-row">
+            <div class="portfolio-item">
+                <img src="d:\FIGMA\6.jpg" alt="Banking App">
+                <div class="caption">Ваші дані. Там, де вам потрібно</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="d:\FIGMA\7.jpg" alt="Cashless Payment">
+                <div class="caption">Переробка. На повторі.</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="d:\FIGMA\8.jpg" alt="Meditation App">
+                <div class="caption">Зробіть його
+                    по‑справжньому своїм.</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="d:\FIGMA\9.jpg" alt="Taxi Service">
+                <div class="caption">Корисні функції. Про всяк випадок.</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="d:\FIGMA\10.jpg" alt="Screen Illustrations">
+                <div class="caption">Створений міцним і прекрасним.</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="d:\FIGMA\11.jpg" alt="Online Courses">
+                <div class="caption">Тільки уявіть
+                    ці фото та відео.</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+    <div class="form-wrapper" id="register">
+        <div class="form-container">
+            <h2>Реєстрація</h2>
             <form>
-                <div class="form-container">
-                    <h2>Реєстрація</h2>
-                    <form>
-                        <div>
-                            <input type="text" name="name" placeholder="Ім'я" required style="width: 500px; height: 100px; font-size: 20px;">
-                        </div>
-                        <div>
-                            <input type="email" name="email" placeholder="Email" required style="width: 500px; height: 100px; font-size: 20px;">
-                        </div>
-                        <div>
-                            <input type="password" name="password" placeholder="Пароль" required style="width: 500px; height: 100px; font-size: 20px;">
-                        </div>
-                        <div>
-                            <button type="submit" style="width: 500px; height: 100px; font-size: 20px;">Зареєструватися</button>
-                        </div>
-                    </form>
-                </div>
+                <input type="text" name="name" placeholder="Ім'я" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <button type="submit">Зареєструватися</button>
             </form>
         </div>
     </div>
-</body>
-</html>
+</div>
 
+<footer id="contact">
+    <p>Контакти: example@email.com | Телефон: +380 123 456 789</p>
+</footer>
+</html>
