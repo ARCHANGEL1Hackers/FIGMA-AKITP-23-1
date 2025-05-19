@@ -1,3 +1,12 @@
+@media screen and (max-width: 998px) {
+    
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 576px) and (max-height: 300px) {
+}
 .slider {
     width: 80vw;
     max-width: 760px;
@@ -476,7 +485,7 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 100%; 
     max-width: 800px; 
-    margin: 50px auto; /
+    margin: 50px auto; 
     text-align: center;
     line-height: 1.6; 
 }

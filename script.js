@@ -29,3 +29,48 @@ controlls.forEach((e) => {
 })
 
 show(imageIndex);
+document.addEventListener("DOMContentLoaded", function () {
+    const registerBtn = document.querySelector("#register-btn");
+  
+    if (!registerBtn) {
+      console.error("Registration button not found!");
+      return;
+    }
+  
+    registerBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+  
+      const form = registerBtn.closest("form");
+      if (!form) {
+        alert("Form not found!");
+        return;
+      }
+  
+      const name = form.querySelector("input[name='name']");
+      const email = form.querySelector("input[name='email']");
+      const password = form.querySelector("input[name='password']");
+  
+      let errors = [];
+  
+      if (!name || name.value.trim() === "") {
+        errors.push("Name is required.");
+      }
+  
+      if (!email || !/^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(email.value.trim())) {
+        errors.push("Valid email is required.");
+      }
+  
+      if (!password || password.value.length < 6) {
+        errors.push("Password must be at least 6 characters.");
+      }
+  
+      if (errors.length > 0) {
+        alert("Form validation failed:\n\n" + errors.join("\n"));
+        return;
+      }
+  
+      alert("Registration successful!");
+      form.submit(); // or handle via JS
+    });
+  });
+  
